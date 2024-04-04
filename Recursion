@@ -1,1 +1,61 @@
 //Recursion
+ques1...     Print name 5 times
+
+Ans1...
+#include<iostream>
+using namespace std;
+void f(int i,int n){
+    if(i==n){
+        return;
+    }
+    cout<<"This is Khushi"<<endl;
+    f(i+1,n);
+}
+
+int main(){
+    int n;
+    cin>>n;
+    f(0,5);
+}
+
+
+Ques2....   Print linearly from 1 to N
+
+#include<iostream>
+using namespace std;
+
+Ans2...
+void f1(int i,int n){
+    if(i>n){
+        return;
+    }
+    cout<<i<<" ";
+    f1(i+1,n);
+}
+int main(){
+    int n;
+    cin>>n;
+    f1(1,n);
+}
+
+
+Ques3. print linearly from n to 1.
+
+Ans3...
+#include<iostream>
+using namespace std;
+
+void f2(int i,int n){
+    if (i>n)
+    return;
+    cout<<n-i+1<<" ";
+    f2(i+1,n);
+}
+
+int main(){
+    int n;
+    cin>>n;
+    f2(1,n);
+}
+
+
